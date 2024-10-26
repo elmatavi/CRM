@@ -1,9 +1,19 @@
 package com.crm.step_definitions;
 
+import com.crm.pages.CRM_HomePage;
 import com.crm.pages.LoginPage;
+import com.crm.utilities.BrowserUtils;
 import com.crm.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class LoginStepDefs {
+
 
 
     @Given("the user is on the login page")
@@ -31,11 +41,12 @@ public class LoginStepDefs {
         new LoginPage().login(username,password);
     }
 
-    @Given("the user logged in with username as {string} and password as {string}")
-    public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
-      LoginPage loginPage=new LoginPage();
-      loginPage.login(username,password);
-    }
+//    @Given("the user logged in with username as {string} and password as {string}")
+//    public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
+//      LoginPage loginPage=new LoginPage();
+//      loginPage.login(username,password);
+//    }
+
 
 
 
