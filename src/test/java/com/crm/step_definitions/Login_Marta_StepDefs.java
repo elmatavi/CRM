@@ -34,12 +34,14 @@ public class Login_Marta_StepDefs {
     //work with system clipboard (copy/past)
     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 
+/*
+l
+ */
+     @When("user enter invalid {string} and {string}")
 
-    @When("user enter invalid <{string}> and <{string}>")
-    public void user_enter_invalid_and(String username, String password) {
+    public void userEnterInvalidAnd(String username, String password) {
         login.userName.sendKeys(username);
         login.password.sendKeys(password);
-
     }
 
     @When("user click on Login Button")
@@ -167,6 +169,7 @@ public class Login_Marta_StepDefs {
     public void user_see_title(String expectedTitle) {
         BrowserUtils.verifyTitleContains(expectedTitle);
     }
+
 
 
 }
