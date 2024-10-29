@@ -26,4 +26,7 @@ public class CRM_HomePage {
     //Locating options in the "MORE" link and storing them into List<WebElement>
     @FindBy(xpath = "//div[@class='menu-popup-items']/span")
     public List<WebElement> listOfMoreLinks;
+
+    @FindBy(xpath = "//span[normalize-space(text())='Employees']")
+    public WebElement employeesLink;
 }
