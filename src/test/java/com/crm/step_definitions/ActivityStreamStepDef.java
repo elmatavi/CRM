@@ -52,6 +52,8 @@ public class ActivityStreamStepDef {
         Assert.assertEquals(expectedOptions, actualOptions);
 
     }
+
+    //aasdasd
     @Then("User should click MORE")
     public void userShouldClickMORE() {
         homePage.moreLink.click();
