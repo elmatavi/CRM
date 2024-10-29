@@ -3,30 +3,31 @@ package com.crm.step_definitions;
 
 
 
-import com.crm.utilities.BrowserUtils;
-import com.crm.utilities.ConfigurationReader;
+import com.crm.utilities.BrowserUtils298;
 import com.crm.utilities.Driver;
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.junit.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
-import java.time.Duration;
 
 /*
 In this class we will be able to create "pre" and "post" condition
 for ALL the SCENARIOS and even STEPS.
  */
-public class Hooks {
+public class Hooks298 {
 
     //import the @Before coming from io.cucumber.java
-    @Before (order = 1)
-    public void setupMethod(){
-
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+//    @Before (order = 1)
+//    public void setupMethod(){
+//
+//        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//
+//        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+//    }
+    @Before
+    public void setUp(){
+      //  Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
     //@Before (value = "@login", order = 2 )
@@ -49,7 +50,7 @@ public class Hooks {
 
 
 
-        BrowserUtils.sleep(2);
+        BrowserUtils298.sleep(2);
         Driver.closeDriver();
 
     }

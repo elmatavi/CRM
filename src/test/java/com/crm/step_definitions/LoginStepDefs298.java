@@ -2,13 +2,15 @@ package com.crm.step_definitions;
 
 import com.crm.pages.LoginPage;
 import com.crm.utilities.ConfigurationReader;
+import com.crm.utilities.Driver;
 import io.cucumber.java.en.Given;
-public class LoginStepDefs {
+public class LoginStepDefs298 {
 
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
         System.out.println("Login to app in Before method");
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
     @Given("the user logged in as {string}")

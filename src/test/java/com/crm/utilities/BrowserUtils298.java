@@ -13,7 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class BrowserUtils {
+public class BrowserUtils298 {
+
 
 
     /*
@@ -164,15 +165,24 @@ public class BrowserUtils {
     /**
      * Extracts text from list of elements matching the provided locator into new List<String>
      *
-     * @param locator
+     * @param
      * @return list of strings
      */
-    public static List<String> getElementsText(By locator) {
+//    public static List<String> getElementsText(WebElement locator) {
+//
+//        List<WebElement> elems = Driver.getDriver().findElements(locator);
+//        List<String> elemTexts = new ArrayList<>();
+//
+//        for (WebElement el : elems) {
+//            elemTexts.add(el.getText());
+//        }
+//        return elemTexts;
+//    }
 
-        List<WebElement> elems = Driver.getDriver().findElements(locator);
+
+    public static List<String> getElementsText1(List<WebElement> list) {
         List<String> elemTexts = new ArrayList<>();
-
-        for (WebElement el : elems) {
+        for (WebElement el : list) {
             elemTexts.add(el.getText());
         }
         return elemTexts;
