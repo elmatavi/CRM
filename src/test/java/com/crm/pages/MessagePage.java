@@ -60,6 +60,31 @@ public class MessagePage {
       public WebElement removeIcon;
 
 
+      @FindBy(xpath = "//span[@title='Link']")
+      public WebElement linkIcon;
+
+
+      @FindBy(xpath = "//div[@id='bx-admin-prefix']")
+      public WebElement linkWindow;
+
+
+      @FindBy(xpath = "//td[@class='bxhtmled-right-c']//input[@id='linkidPostFormLHE_blogPostForm-text']")
+      public WebElement linkTextInput;
+
+      @FindBy(xpath = "//td[@class='bxhtmled-right-c']//input[@id='linkidPostFormLHE_blogPostForm-href']")
+      public WebElement link_Url_Input;
+
+      //div[@class='bx-core-adm-dialog-buttons']//input[@value='Save']
+      @FindBy(xpath = "//div[@class='bx-core-adm-dialog-buttons']//input[@value='Save']")
+      public WebElement link_window_saveButton;
+
+
+
+
+
+
+
+
 
      /*
      This method waits until the uploaded file appears as an attachment and returns the WebElement.
