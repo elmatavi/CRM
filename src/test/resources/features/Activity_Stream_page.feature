@@ -22,7 +22,7 @@ Feature: Verify that the user views the following options on the Activity Stream
 
 
 
-  @wip
+
   Scenario Outline: Verify login with different user types
     Given the user logged in as "<userType>"
 

@@ -484,5 +484,11 @@ public class BrowserUtils {
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time)).until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+    // Method to get the full path of a file in the filesToUpload directory
+    public static String getFileFullPath(String fileName){
+        String projectPath = System.getProperty("user.dir");
+        String filePath = "src/test/resources/filesToUpload/" + fileName;
+        return projectPath + "/" + filePath;
+    }
 
 }
