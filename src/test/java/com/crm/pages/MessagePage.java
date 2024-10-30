@@ -59,7 +59,7 @@ public class MessagePage {
       @FindBy(xpath = "//div[@class='diskuf-placeholder']//table//tbody[@class='diskuf-placeholder-tbody']//td[@class='files-del-btn']/span")
       public WebElement removeIcon;
 
-
+    //check
 
      /*
      This method waits until the uploaded file appears as an attachment and returns the WebElement.
