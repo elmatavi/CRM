@@ -1,4 +1,4 @@
-@upload
+
 Feature: Upload Files and Images as Messages
 
 Background: user logged into the application
