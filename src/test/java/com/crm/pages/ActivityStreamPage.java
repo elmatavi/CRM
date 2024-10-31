@@ -44,6 +44,10 @@ public class ActivityStreamPage {
     @FindBy(xpath="//span[text()='Workflow']")
     public WebElement workflowOption;
 
+    // clickable functionalities in the sidebar:
+
+    @FindBy(xpath="//a[@title='Employees']")
+    public WebElement Employee;
 
 
 
