@@ -22,6 +22,13 @@ public class BrowserUtils298 {
     and execute Thread.sleep method for given duration
     Arg: int second
      */
+
+    public static String getFileFullPath(String fileName){
+        String projectPath = System.getProperty("user.dir");
+        String filePath = "src/test/resources/filesToUpload/" + fileName;
+        return projectPath + "/" + filePath;
+    }
+
     public static void sleep(int second){
         second *= 1000;
         try{
